@@ -1,3 +1,4 @@
+/*
 body{
     background-image: url(https://picsum.photos/id/143/1920/1280);
     width: 100%;
@@ -7,9 +8,17 @@ body{
     overflow: hidden;
     text-align: center;
 }
-
+*/
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.icon{
+    
+    color: greenyellow;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 50%;
 }
