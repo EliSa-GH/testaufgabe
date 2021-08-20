@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //Copyright aktualisieren
 	var datum = new Date();
-    document.getElementById('year').innerHTML = datum.getFullYear();
+    document.getElementById('year').innerHTML = '©'+datum.getFullYear();
 });

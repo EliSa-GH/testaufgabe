@@ -1,4 +1,9 @@
-
+/*
+header{
+    text-align: right;
+    overflow: auto;
+}
+*/
 .body{
     /*background-image: url(https://picsum.photos/id/307/1920/1280);*/
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(holz.jpg);
@@ -18,6 +23,7 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin: 1em;
 }
 
 .icon{
@@ -33,4 +39,33 @@ footer{
     vertical-align: middle;
     overflow: hidden;
     border: solid 2px #b5b5b5;
+    margin: 0.5em;
 }
+
+.flex{
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-item{
+    text-align: center;
+    
+}
+
+h1{
+    font-size: 80px;
+    margin-top: 5em;
+    margin-bottom: 0.4em;
+
+    animation: central-message 10s ease-out;
+}
+
+@keyframes central-message{
+    0%   { 
+    transform: translateY(200%); 		
+    }
+    100% { 
+    transform: translateY(0%); 
+    }
+   }
