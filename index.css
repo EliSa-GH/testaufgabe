@@ -38,10 +38,14 @@ footer{
     text-align: center;
     vertical-align: middle;
     overflow: hidden;
-    border: solid 2px #b5b5b5;
+    border: solid 2px Gainsboro;
     margin: 0.5em;
 
     animation: central-message 2s ease-out;
+}
+
+a:hover{
+    box-shadow: 2px 2px 2px 2px Gainsboro;
 }
 
 .flex{
