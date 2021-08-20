@@ -40,6 +40,8 @@ footer{
     overflow: hidden;
     border: solid 2px #b5b5b5;
     margin: 0.5em;
+
+    animation: central-message 2s ease-out;
 }
 
 .flex{
@@ -58,12 +60,21 @@ h1{
     margin-top: 5em;
     margin-bottom: 0.4em;
 
-    animation: central-message 10s ease-out;
+    animation: central-message 2s ease-out;
 }
 
 @keyframes central-message{
     0%   { 
-    transform: translateY(200%); 		
+    transform: translateY(600%); 		
+    }
+    100% { 
+    transform: translateY(0%); 
+    }
+   }
+
+   @keyframes icon{
+    0%   { 
+    transform: translateY(600%); 		
     }
     100% { 
     transform: translateY(0%); 
