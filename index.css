@@ -1,14 +1,19 @@
-/*
+
+.body{
+    /*background-image: url(https://picsum.photos/id/307/1920/1280);*/
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(holz.jpg);
+}
+
 body{
-    background-image: url(https://picsum.photos/id/143/1920/1280);
     width: 100%;
     background-position-x: center;
     background-position-y: top;
 
     overflow: hidden;
     text-align: center;
+    color: Gainsboro;
 }
-*/
+
 footer{
     position: fixed;
     bottom: 0;
@@ -16,9 +21,16 @@ footer{
 }
 
 .icon{
-    
-    color: greenyellow;
-    text-align: center;
-    border: 2px solid green;
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: Gainsboro;
+    line-height: 40px;
+    font-size: 20px;
     border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    border: solid 2px #b5b5b5;
 }
