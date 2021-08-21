@@ -101,6 +101,9 @@ footer{
     font-style: normal;
 }
 
+#year{
+    display: inline;
+}
 
 /*Anpassung an Laptop*/
 @media only screen and (max-width: 1042px), (max-height: 600px){
