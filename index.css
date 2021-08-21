@@ -15,6 +15,8 @@ body{
     background-position-y: top;
 
     overflow: hidden;
+
+    font-family: Arial;
     text-align: center;
     color: Gainsboro;
 }
@@ -29,11 +31,11 @@ footer{
 .icon{
     display: inline-block;
     text-decoration: none;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     color: Gainsboro;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 45px;
+    font-size: 30px;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
@@ -41,7 +43,7 @@ footer{
     border: solid 2px Gainsboro;
     margin: 0.5em;
 
-    animation: central-message 2s ease-out;
+    animation: icon 2s ease-out;
 }
 
 a:hover{
@@ -59,28 +61,63 @@ a:hover{
     
 }
 
-h1{
+#central-message{
+    font-weight: bold;
     font-size: 80px;
-    margin-top: 5em;
-    margin-bottom: 0.4em;
-
+    
+    margin-top: 30%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
     animation: central-message 2s ease-out;
 }
 
-@keyframes central-message{
-    0%   { 
-    transform: translateY(600%); 		
-    }
-    100% { 
-    transform: translateY(0%); 
-    }
-   }
+#sub-message{
+    font-size: 30px;
+}
 
-   @keyframes icon{
-    0%   { 
-    transform: translateY(600%); 		
+@keyframes central-message{
+    0%{ 
+        transform: translateY(600%); 		
     }
-    100% { 
-    transform: translateY(0%); 
+    100%{ 
+        transform: translateY(0%); 
     }
-   }
+}
+
+@keyframes icon{
+    0%{ 
+        transform: translateY(600%); 		
+    }
+    100%{ 
+        transform: translateY(0%); 
+    }
+}
+
+/*Anpassung an Tablet (quer gedreht)*/
+@media only screen and (max-width: 1042px){
+    #central-message{
+        color:green;
+        font-size: 80px;
+    }
+}
+
+/*Anpassung an Tablet (hochkant)*/
+@media only screen and (max-width: 788px){
+    #central-message{
+        color:red;
+        font-size: 80px;
+
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+/*Anpassung an Smartphone*/
+@media only screen and (max-width: 400px){
+    #central-message{
+        color:orange;
+        font-size: 80px;
+    }
+}
