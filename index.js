@@ -29,13 +29,4 @@ document.addEventListener('DOMContentLoaded', function(){
 	var datum = new Date();
     document.getElementById('year').innerHTML = '©'+datum.getFullYear();
 
-    //Animation
-/*
-    document.getElementById('year').animate([
-        {transform: 'translateY(600%)'},
-        {transform: 'translateY(0%)'}
-    ]);
-  */  
-    
-
 });
