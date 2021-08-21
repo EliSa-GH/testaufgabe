@@ -4,23 +4,19 @@ header{
     overflow: auto;
 }
 */
-.body{
-    /*background-image: url(https://picsum.photos/id/307/1920/1280);*/
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(holz.jpg);
-}
+
 
 body{
-    width: 100%;
-    background-position-x: center;
-    background-position-y: top;
+    /*background-image: url(https://picsum.photos/id/307/1920/1280);*/
 
-    overflow: hidden;
-
-    font-family: Arial;
-    text-align: center;
-    color: Gainsboro;
+    background: linear-gradient(rgba(255, 69, 0, 0.5), rgba(255, 69, 0, 0.5)), url(holz.jpg);
+    background-position-x: center !important;
+    background-position-y: top !important;
 }
 
+
+
+/*
 article{
     position: absolute;
     bottom: 0px;
@@ -84,7 +80,7 @@ a:hover{
     margin-left: 5%;
     margin-right: 5%;
 }
-*/
+
 
 #sub-message{
     font-weight: lighter;

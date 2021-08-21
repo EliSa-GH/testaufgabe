@@ -1,11 +1,7 @@
-.body{
-    /*background-image: url(https://picsum.photos/id/307/1920/1280);*/
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(holz.jpg);
-}
-
 body{
-    background-position-x: center;
-    background-position-y: top;
+    background: linear-gradient(rgba(255, 69, 0, 0.5), rgba(255, 69, 0, 0.5)), url(holz.jpg);
+    background-position-x: center !important;
+    background-position-y: top !important;
 
     overflow: hidden;
 
@@ -33,11 +29,16 @@ p{
     
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 0.4em;
 }
 
 #sub-message{
     font-weight: lighter;
     font-size: 30px;
+}
+
+div{
+    margin: 2.5em;
 }
 
 .icon{
