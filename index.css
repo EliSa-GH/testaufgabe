@@ -1,16 +1,9 @@
-/*
-header{
-    text-align: right;
-    overflow: auto;
-}
-*/
 .body{
     /*background-image: url(https://picsum.photos/id/307/1920/1280);*/
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(holz.jpg);
 }
 
 body{
-    width: 100%;
     background-position-x: center;
     background-position-y: top;
 
@@ -23,16 +16,28 @@ body{
 
 article{
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 70px;
+
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
-footer{
+p{
+    margin: 0px;
+}
+
+#central-message{
+    font-weight: bolder;
+    font-size: 80px;
     
-    bottom: 0px;
-    text-align: center;
-    margin: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#sub-message{
+    font-weight: lighter;
+    font-size: 30px;
 }
 
 .icon{
@@ -53,44 +58,6 @@ footer{
     animation: rise 2s ease-out;
 }
 
-i:hover{
-    
-    animation: spin 2s linear infinite;
-}
-
-a{
-    color: gainsboro;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-.flex{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-
-/*
-#central-message{
-    font-weight: bolder;
-    font-size: 80px;
-    
-    margin-top: 30%;
-    margin-bottom: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-*/
-
-#sub-message{
-    font-weight: lighter;
-    font-size: 30px;
-}
-
 @keyframes rise{
     0%{ 
         transform: translateY(600%); 		
@@ -98,6 +65,11 @@ a:hover{
     100%{ 
         transform: translateY(0%); 
     }
+}
+
+i:hover{
+    
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin{
@@ -110,38 +82,57 @@ a:hover{
 
 }
 
-/*
-Anpassung an Laptop
+a{
+    color: gainsboro;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    position: absolute;
+    bottom: 15px;
+
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-style: normal;
+}
+
+
+/*Anpassung an Laptop*/
 @media only screen and (max-width: 1042px), (max-height: 600px){
     #central-message{
         font-size: 80px;
-        margin-top: 10%;
     }
 }
 
-Anpassung an Tablet (quer gedreht)
+/*Anpassung an Tablet (quer gedreht)*/
 @media only screen and (max-width: 1042px){
     #central-message{
         font-size: 80px;
     }
 }
 
-Anpassung an Tablet (hochkant)
+/*Anpassung an Tablet (hochkant)*/
 @media only screen and (max-width: 788px){
     #central-message{
+
+        
         margin-left: 20%;
         margin-right: 20%;
     }
 }
 
-Anpassung an Smartphone
+/*Anpassung an Smartphone*/
 @media only screen and (max-width: 400px){
     #central-message{
         font-size: 50px;
 
-        margin-top: 65%;
+        
         margin-left: 5%;
         margin-right: 5%;
     }
 }
-*/
